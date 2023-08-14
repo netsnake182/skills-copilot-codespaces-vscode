@@ -19,7 +19,6 @@ var server = http.createServer(function (req, res) {
         var comment = parseObj.query;
         comment.dateTime = '2019-9-16';
         comments.unshift(comment);
-        //重定向
         res.statusCode = 302;
         res.setHeader('Location', '/');
         res.end();
