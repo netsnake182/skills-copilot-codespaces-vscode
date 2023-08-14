@@ -25,3 +25,5 @@ var server = http.createServer(function (req, res) {
     } else if (pathname === '/comments') {
         var str = JSON.stringify(comments);
         res.end(str);
+    }
+});
